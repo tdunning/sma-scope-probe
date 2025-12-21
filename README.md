@@ -13,3 +13,8 @@ This directory contains two KiCAD designs that allow you to have just that. Thes
 The overall circuit including both parts looks like this:
 
 <img width="1269" height="420" alt="image" src="https://github.com/user-attachments/assets/9f9cb32a-9bac-4171-a083-022321a6504d" />
+
+You can order the boards from OSH Park here:
+
+* [the probe](https://oshpark.com/shared_projects/2j91MhcF)
+* [the terminator](https://oshpark.com/shared_projects/2j91MhcF)
