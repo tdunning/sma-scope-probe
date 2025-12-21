@@ -18,3 +18,12 @@ You can order the boards from OSH Park here:
 
 * [the probe](https://oshpark.com/shared_projects/jtOnijrd)
 * [the terminator](https://oshpark.com/shared_projects/2j91MhcF)
+
+# Parts
+
+This list at Digikey has [all of the passive components](https://www.digikey.com/en/mylists/list/1PMQ8QBF5N) except for the SMA connectors which are a bit expensive from primary parts vendors like Digikey. You can pick these up all over the place for <$1 per connector. See the following items at Amazon, for instance:
+
+* https://www.amazon.com/Superbat-Connectors-Coaxial-Connector-Vertical/dp/B09V6ZY1PH
+* https://www.amazon.com/QMseller-Launch-Straight-Connector-Adapter/dp/B07GXSN7VS
+* https://www.amazon.com/bnafes-Straight-Connector-Coaxial-Adapter/dp/B09N1RBBFX
+  
