@@ -1,4 +1,4 @@
-* SMA Oscilloscope Probes
+# SMA Oscilloscope Probes
 
 It is pretty common that I am working on a project and I want to leave my 10x probes connected to an electronic circuit project. This can be for 10 minutes while I mess with something in the circuit or it might be for 10 weeks, especially if I am working on the software part of a project, but need to check periodically on the effect on the hardware side.
 
@@ -12,3 +12,4 @@ This directory contains two KiCAD designs that allow you to have just that. Thes
 
 The overall circuit including both parts looks like this:
 
+<img width="1269" height="420" alt="image" src="https://github.com/user-attachments/assets/9f9cb32a-9bac-4171-a083-022321a6504d" />
