@@ -16,5 +16,5 @@ The overall circuit including both parts looks like this:
 
 You can order the boards from OSH Park here:
 
-* [the probe](https://oshpark.com/shared_projects/2j91MhcF)
+* [the probe](https://oshpark.com/shared_projects/jtOnijrd)
 * [the terminator](https://oshpark.com/shared_projects/2j91MhcF)
