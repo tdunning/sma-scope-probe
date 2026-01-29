@@ -19,6 +19,15 @@ You can order the boards from OSH Park here:
 * [the probe](https://oshpark.com/shared_projects/jtOnijrd)
 * [the terminator](https://oshpark.com/shared_projects/2j91MhcF)
 
+# Building the circuit
+
+The circuit diagram above is all fine and good with respect to the capacitance of the input of the 
+oscilloscope, but it leaves out the crucial factor of the capacitance of the coax between the two parts of the attenuator. This cable acts like a capacitance because it is short compared to the wavelengths of interest (less than 1m versus 3m). The spec for RG-316 which is commonly used with SMA connectors is 100±5pF / m. In my case, I am interested in is 50cm long so I can expect about 50pF extra. With the 14pF of the scope itself and the 3-10pF of the variable capacitor, that's 66-74pF which needs compensated. This means that we need about 6.5-7.5pF, give or take, instead of 2pF at the probe end. The other effect of this additional capacitance is that the variable capacitor really doesn't have as much bite as we would like so the capacitance at the probe end has to be in a very narrow range. It would be better to use a trimmer with higher capacitance.
+
+Once you have found an appropriate capacitance, you should see a waveform like this with a normal calibration signal.
+
+![A calibrated probe should produce a very nice square wave](calibrated-probe.png)
+
 # Parts
 
 This list at Digikey has [all of the passive components](https://www.digikey.com/en/mylists/list/1PMQ8QBF5N) except for the SMA connectors which are a bit expensive from primary parts vendors like Digikey. You can pick these up all over the place for <$1 per connector. See the following items at Amazon, for instance:
