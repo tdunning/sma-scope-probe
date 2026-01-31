@@ -541,6 +541,12 @@
 		)
 	)
 	(junction
+		(at 119.38 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16246ae3-cb9d-41a8-ac3b-ba061a02f010")
+	)
+	(junction
 		(at 119.38 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -550,7 +556,13 @@
 		(at 138.43 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d68924ea-9eb1-4896-a552-d8d9b1d5c32a")
+		(uuid "4ff52e0d-8819-429f-83fe-05178761ed42")
+	)
+	(junction
+		(at 138.43 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94e4af06-4b2e-4796-ae6c-1712c6c6267f")
 	)
 	(wire
 		(pts
@@ -574,7 +586,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 80.01) (xy 124.46 80.01)
+			(xy 119.38 80.01) (xy 120.65 80.01)
 		)
 		(stroke
 			(width 0)
@@ -594,6 +606,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 97.79) (xy 138.43 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d182dec-fe0b-4777-82b1-be6e582ec16f")
+	)
+	(wire
+		(pts
 			(xy 119.38 80.01) (xy 119.38 87.63)
 		)
 		(stroke
@@ -604,13 +626,43 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 80.01) (xy 138.43 80.01)
+			(xy 138.43 87.63) (xy 138.43 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bd23ef63-3e50-49f3-933e-c7f455b303f4")
+		(uuid "9598ba3d-6cbd-406a-a903-c988f81395ed")
+	)
+	(wire
+		(pts
+			(xy 128.27 80.01) (xy 129.54 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa9bd3f3-e73b-4a09-8731-8d1ea515e5a6")
+	)
+	(wire
+		(pts
+			(xy 119.38 87.63) (xy 119.38 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adb5a889-6bab-4040-9e53-47ac1394c701")
+	)
+	(wire
+		(pts
+			(xy 124.46 97.79) (xy 119.38 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ba6754-feac-4a4b-b40f-93114d601758")
 	)
 	(wire
 		(pts
@@ -644,6 +696,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 80.01) (xy 138.43 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d915155d-e0f5-404d-be61-bf65a588d886")
+	)
+	(wire
+		(pts
 			(xy 152.4 85.09) (xy 152.4 90.17)
 		)
 		(stroke
@@ -651,6 +713,26 @@
 			(type default)
 		)
 		(uuid "f3bc9c55-5502-408b-982d-b92f1b0e8d36")
+	)
+	(label "In"
+		(at 111.76 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa45cf9b-7bf0-4485-879b-dd71a1455a19")
+	)
+	(label "Out"
+		(at 140.97 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ffc231f4-74aa-4219-b13a-015ba82e99f7")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -781,6 +863,74 @@
 			(project ""
 				(path "/0e2e18e6-1bf7-45b9-957f-fc4f8daaef3f"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 133.35 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d063269-9f7f-4185-9367-d119ff0ea180")
+		(property "Reference" "R2"
+			(at 133.35 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.5MΩ"
+			(at 133.35 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 133.35 81.788 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 133.35 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "514e8b6e-f44b-49c5-be0c-9496940000b9")
+		)
+		(pin "1"
+			(uuid "7f3e0acf-e668-4fa1-804f-cad374d7062a")
+		)
+		(instances
+			(project "probe"
+				(path "/0e2e18e6-1bf7-45b9-957f-fc4f8daaef3f"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -989,33 +1139,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 128.27 80.01 90)
+		(lib_id "Device:C")
+		(at 128.27 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fb893623-b44a-47ba-ab32-0a71358717e1")
-		(property "Reference" "R1"
-			(at 128.27 73.66 90)
+		(uuid "a952e4dd-024d-441f-aa56-a09133e37170")
+		(property "Reference" "C2"
+			(at 128.27 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "9MΩ"
-			(at 128.27 76.2 90)
+		(property "Value" "5pF"
+			(at 128.524 103.632 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 128.27 81.788 90)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 132.08 96.8248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1024,7 +1173,75 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.27 80.01 0)
+			(at 128.27 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 128.27 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3dca2930-785a-4440-995f-08508a96b9dd")
+		)
+		(pin "2"
+			(uuid "48d465bb-f2e4-45e1-89fa-466c6f2b9218")
+		)
+		(instances
+			(project "probe"
+				(path "/0e2e18e6-1bf7-45b9-957f-fc4f8daaef3f"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb893623-b44a-47ba-ab32-0a71358717e1")
+		(property "Reference" "R1"
+			(at 124.46 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.5MΩ"
+			(at 124.46 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 124.46 81.788 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1033,7 +1250,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 128.27 80.01 0)
+			(at 124.46 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
