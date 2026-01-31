@@ -46,11 +46,13 @@ closer to the desired value this way. Similarly, there are two parallel capacito
 
 ![The attenuator is laid out on a single 22 x 13 mm double-sided board.](images/rendering.png)
 
-This directory contains two KiCAD designs instead of one. The `base` directory contains an old design that put the variable capacitor near the oscilloscope and the `probe` directory contains the current design. This circuit has a very conventional 10x divider with capacitors that allow you to tune the compensation on probe for flat response. There is no provision for calibration, but the specified resistors should be within 1%.
+This directory contains the KiCAD layout for this probe. This circuit has a very conventional 10x divider with capacitors that allow you to tune the compensation on the probe for flat response. There is no provision for calibration, but the specified resistors should be within 1%.
 
 You can order [the board from OSH Park](https://oshpark.com/shared_projects/0noho4Gm).
 
 # Building the Previous Version
+
+This section describes building the older two-part version of the circuit. It will be replaced by a new section when the updated boards and parts arrive.
 
 The circuit diagram above is all fine and good with respect to the capacitance of the input of the 
 oscilloscope, but it leaves out the crucial factor of the capacitance of the coax between the two parts of the attenuator. This cable acts like a capacitance because it is short compared to the wavelengths of interest (less than 1m versus 3m). The spec for RG-316 which is commonly used with SMA connectors is 100±5pF / m. In my case, I am interested in is 50cm long so I can expect about 50pF extra. With the 14pF of the scope itself and the 3-10pF of the variable capacitor, that's 66-74pF which needs compensated. This means that we need about 6.5-7.5pF, give or take, instead of 2pF at the probe end. The other effect of this additional capacitance is that the variable capacitor really doesn't have as much bite as we would like so the capacitance at the probe end has to be in a very narrow range. It would be better to use a trimmer with higher capacitance in the next version.
