@@ -314,6 +314,171 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Trim"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 1.524 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "C_Trim"
+				(at 3.048 -3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Trimmable capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "trimmer variable capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Trim_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.381 3.048)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 2.159 2.032)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Trim_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.048)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.048)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -540,6 +705,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "The values of C1 and C2 must be adapted according to the length of \ncable connecting the equalizing network to the oscilloscope and the\ncapacitance of the oscilloscope.\n\nThe total value of the pair should be 10% of the sum of the mid-point\nof the trimmer, plus the scope capacitance, plus about 1pF per cm of\ncable."
+		(exclude_from_sim no)
+		(at 98.806 113.284 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "03dbc54a-3818-474f-a3b4-d38974c11dd6")
+	)
+	(text "10x SMA oscilloscope probe with equalization."
+		(exclude_from_sim no)
+		(at 190.5 189.738 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+			)
+			(justify left)
+		)
+		(uuid "2e44de3c-594f-43d0-abd2-52f0cdd9a86c")
+	)
 	(junction
 		(at 119.38 87.63)
 		(diameter 0)
@@ -559,10 +746,26 @@
 		(uuid "4ff52e0d-8819-429f-83fe-05178761ed42")
 	)
 	(junction
+		(at 147.32 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ae38666-1e66-4ca4-bdd8-90562102f5e4")
+	)
+	(junction
 		(at 138.43 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "94e4af06-4b2e-4796-ae6c-1712c6c6267f")
+	)
+	(wire
+		(pts
+			(xy 147.32 91.44) (xy 147.32 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19218730-29bc-4089-a2b6-9e66c0c5a2ed")
 	)
 	(wire
 		(pts
@@ -593,6 +796,26 @@
 			(type default)
 		)
 		(uuid "66698073-e9ed-44fd-a6e9-13284fe4e4eb")
+	)
+	(wire
+		(pts
+			(xy 147.32 80.01) (xy 154.94 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bb28e03-11cb-4e9c-9d6f-2ec64a08e220")
+	)
+	(wire
+		(pts
+			(xy 147.32 80.01) (xy 147.32 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80b7efd3-6d94-46dc-9fca-a7edbab7bf67")
 	)
 	(wire
 		(pts
@@ -633,6 +856,16 @@
 			(type default)
 		)
 		(uuid "9598ba3d-6cbd-406a-a903-c988f81395ed")
+	)
+	(wire
+		(pts
+			(xy 138.43 80.01) (xy 147.32 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c1d7a5e-8e91-46dc-a4cd-4e7ca9d24ec6")
 	)
 	(wire
 		(pts
@@ -686,16 +919,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 80.01) (xy 147.32 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3c1e343-e80f-4576-9615-4bf2b72b0b69")
-	)
-	(wire
-		(pts
 			(xy 137.16 80.01) (xy 138.43 80.01)
 		)
 		(stroke
@@ -706,7 +929,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 85.09) (xy 152.4 90.17)
+			(xy 160.02 85.09) (xy 160.02 93.98)
 		)
 		(stroke
 			(width 0)
@@ -725,7 +948,7 @@
 		(uuid "aa45cf9b-7bf0-4485-879b-dd71a1455a19")
 	)
 	(label "Out"
-		(at 140.97 80.01 0)
+		(at 151.13 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -876,18 +1099,17 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3d063269-9f7f-4185-9367-d119ff0ea180")
 		(property "Reference" "R2"
-			(at 133.35 73.66 90)
+			(at 133.096 77.724 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4.5MΩ"
-			(at 133.35 76.2 90)
+		(property "Value" "4.02 MΩ"
+			(at 133.604 82.296 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -937,8 +1159,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Trim")
+		(at 147.32 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "480e4048-485d-481e-956c-2f7677db478f")
+		(property "Reference" "C3"
+			(at 151.13 86.1059 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "8-30pF"
+			(at 151.13 88.6459 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_Trimmer_Sprague-Goodman_SGC3"
+			(at 147.32 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/430/SCG3S_Series_Spec_2020.pdf?_gl=1*1cjebp5*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAr5nKBhCpARIsACa_NiOp8v-3Qg6VxRsadesvz1OIcx9M1SlvFwP3e9yqGBqAxM4DujWyJmgaArtFEALw_wcB&gclsrc=aw.ds&gbraid=0AAAAADrbLlhdecwtFDHIKXDcL_djQaT_V"
+			(at 147.32 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Trimmable capacitor"
+			(at 147.32 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "https://www.digikey.com/en/products/detail/ew-electronics/SGC3S300NM/11689290"
+			(at 147.32 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8951a2c-df44-4e98-82a0-f592c7335af7")
+		)
+		(pin "2"
+			(uuid "60972429-2439-48cc-a728-e7c318eefd18")
+		)
+		(instances
+			(project "probe"
+				(path "/0e2e18e6-1bf7-45b9-957f-fc4f8daaef3f"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 152.4 90.17 0)
+		(at 160.02 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -947,7 +1248,7 @@
 		(fields_autoplaced yes)
 		(uuid "8fe64c2a-b24d-450e-a8fb-c0c59090bf3d")
 		(property "Reference" "#PWR02"
-			(at 152.4 96.52 0)
+			(at 160.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -956,7 +1257,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.4 95.25 0)
+			(at 160.02 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -964,7 +1265,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 90.17 0)
+			(at 160.02 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -973,7 +1274,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 90.17 0)
+			(at 160.02 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -982,7 +1283,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 90.17 0)
+			(at 160.02 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1004,7 +1305,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 152.4 80.01 0)
+		(at 160.02 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1012,7 +1313,7 @@
 		(dnp no)
 		(uuid "9a33e28c-0f8c-4bee-8f86-3c9fb1fe33c1")
 		(property "Reference" "J2"
-			(at 148.844 73.914 0)
+			(at 156.464 73.914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1021,7 +1322,7 @@
 			)
 		)
 		(property "Value" "To scope"
-			(at 148.844 76.454 0)
+			(at 156.464 76.454 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1030,7 +1331,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
-			(at 152.4 80.01 0)
+			(at 160.02 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1039,7 +1340,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 152.4 80.01 0)
+			(at 160.02 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1048,7 +1349,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 152.4 80.01 0)
+			(at 160.02 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1081,7 +1382,7 @@
 		(dnp no)
 		(uuid "a6bf0051-8626-4116-b46a-6641954096c7")
 		(property "Reference" "C1"
-			(at 128.27 91.44 90)
+			(at 128.016 84.328 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1089,7 +1390,7 @@
 			)
 		)
 		(property "Value" "2pF"
-			(at 128.524 93.472 90)
+			(at 128.016 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1148,7 +1449,7 @@
 		(dnp no)
 		(uuid "a952e4dd-024d-441f-aa56-a09133e37170")
 		(property "Reference" "C2"
-			(at 128.27 101.6 90)
+			(at 128.27 94.488 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1156,7 +1457,7 @@
 			)
 		)
 		(property "Value" "5pF"
-			(at 128.524 103.632 90)
+			(at 128.524 101.092 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1206,6 +1507,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 147.32 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e68f120d-ceae-448d-9abd-d7336dfdffb5")
+		(property "Reference" "#PWR03"
+			(at 147.32 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 147.32 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 147.32 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca543731-79bb-427f-a5d5-42ab7bdc12bc")
+		)
+		(instances
+			(project "probe"
+				(path "/0e2e18e6-1bf7-45b9-957f-fc4f8daaef3f"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 124.46 80.01 90)
 		(unit 1)
@@ -1213,18 +1580,17 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fb893623-b44a-47ba-ab32-0a71358717e1")
 		(property "Reference" "R1"
-			(at 124.46 73.66 90)
+			(at 124.206 77.724 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4.5MΩ"
-			(at 124.46 76.2 90)
+		(property "Value" "4.99 MΩ"
+			(at 124.206 82.296 90)
 			(effects
 				(font
 					(size 1.27 1.27)
