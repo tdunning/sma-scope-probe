@@ -57,7 +57,7 @@ oscilloscope, but it leaves out the crucial factor of the capacitance of the coa
 
 In building the first version of the system, I needed about 8pF on the probe unit to give the trimmer capacitor enough swing to tune the response. With only a single 0805 pad to work with, I removed the SMD capacity from the board and used two disk capacitors. In future versions, I will set up more than one footprint on the board to allow tweaks like this.
 
-One other improvement for future versions is that I would prefer to have two footprints for the resistors since it is easy to get 4.5 MΩ resistors but in larger values, the closest I could get for the divider resistor was 9.1 ΜΩ.
+One other improvement for future versions is that I would prefer to have two footprints for the resistors since it is easy to get 4.99 and 4.02 MΩ resistors but in larger values, the closest I could get for the divider resistor was 9.1 ΜΩ.
 
 ![The system, as built, with 5 and 3pF added](images/as-built.jpg)
 
