@@ -705,7 +705,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "The values of C1 and C2 must be adapted according to the length of \ncable connecting the equalizing network to the oscilloscope and the\ncapacitance of the oscilloscope.\n\nThe total value of the pair should be 10% of the sum of the mid-point\nof the trimmer, plus the scope capacitance, plus about 1pF per cm of\ncable."
+	(text "The values of C1 and C2 must be adapted according to the length of \ncable connecting the equalizing network to the oscilloscope and the\ncapacitance of the oscilloscope. The values shown work (for me) for\na 1m cable. For 50cm cable, remove C2.\n\nThe total value of the pair should be 10% of the sum of the mid-point\nof the trimmer, plus the scope capacitance, plus about 1pF per cm of\ncable."
 		(exclude_from_sim no)
 		(at 98.806 113.284 0)
 		(effects
